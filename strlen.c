@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * _strlen - prints length string in integer
  * @s: string passed to function
