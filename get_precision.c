@@ -8,32 +8,34 @@
  *
  * Return: Precision.
  */
-void get_precision(char *format, ...)
+int get_precision(const char *format, unsigned int *i, va_list list)
 {
-    char *traverse;
-    unsigned int i;
-    char *s;
-    va_list arg;
-    va_start(arg, format);
+	int curr_i = *i + 1;
+	int prc = -1;
 
-    for (traverse = format; *traverse != '\0'; traverse++)
-    {
-        while (*traverse != '%')
-        {
-            putchar(*traverse);
-            traverse++;
-        }
-        traverse++;
-        switch (*traverse)
-        {
-        case 's':
-            s = va_arg(arg, char *);
-            puts(s);
-            break;
-        case 'c':
-            putchar(va_arg(lst, int));
-            break;
-        }
-        va_end(arg);
-    }
+	if (format[curr_i] != '.')
+		return (prc);
+
+	prc = 0;
+
+	for (curr_i += 1; format[curr_i] != '\0'; curr_i++)
+	{
+		if (is_digit(format[curr_i]))
+		{
+			prc *= 10;
+			prc += format[curr_i] - '0';
+		}
+		else if (format[curr_i] == '*')
+		{
+			curr_i++;
+			prc = va_arg(list, int);
+			break;
+		}
+		else
+			break;
+	}
+
+	*i = curr_i - 1;
+
+	return (prc);
 }
