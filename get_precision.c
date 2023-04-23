@@ -8,20 +8,32 @@
  *
  * Return: Precision.
  */
+void get_precision(char *format, ...)
+{
+    char *traverse;
+    unsigned int i;
+    char *s;
+    va_list arg;
+    va_start(arg, format);
 
-void get_precision(const char *format, ...) {
-    va_list list;
-    va_start(list, format);
-    
-    while (*format) {
-        if (*format == '%' && *(format+1) == 'p') {
-            int precision = va_arg(list, int);
-            double value = va_arg(list, double);
-            format += 2;
-        } else {
-            putchar(*format++);
+    for (traverse = format; *traverse != '\0'; traverse++)
+    {
+        while (*traverse != '%')
+        {
+            putchar(*traverse);
+            traverse++;
         }
+        traverse++;
+        switch (*traverse)
+        {
+        case 's':
+            s = va_arg(arg, char *);
+            puts(s);
+            break;
+        case 'c':
+            putchar(va_arg(lst, int));
+            break;
+        }
+        va_end(arg);
     }
-    
-    return(list);
 }
