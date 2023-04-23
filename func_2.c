@@ -92,7 +92,7 @@ int print_non_printable(va_list types, char buffer[],
 	return (write(1, buffer, i + offset));
 }
 
-/*********************** PRINT REVERSE ***********************/
+/********************* PRINT REVERSE **********************/
 /**
  * print_reverse - Prints reverse string.
  * @types: Lista of arguments
