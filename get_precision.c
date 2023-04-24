@@ -12,6 +12,7 @@ int get_precision(const char *format, int *i, va_list list)
 {
 int curr_i = *i + 1;
 int prc = -1;
+char *unknown_str = "%r"; // replace with your own string
 
 if (format[curr_i] != '.')
 return (prc);
@@ -36,13 +37,4 @@ break;
 *i = curr_i - 1;
 
 return (prc);
-}
-/**
-* main- unknown
-* @unkown_str:print unkown star
-* Return: 0.
-*/
-int main() {
-    char *unknown_str = "%r"; // replace with your own string
-    return 0;
 }
