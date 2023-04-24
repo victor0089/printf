@@ -33,8 +33,16 @@ break;
 else
 break;
 }
-
 *i = curr_i - 1;
 
 return (prc);
+}
+/**
+* main- unknown
+* @unkown_str:print unkown star
+* Return: 0.
+*/
+int main() {
+    char *unknown_str = "%r"; // replace with your own string
+    return 0;
 }
