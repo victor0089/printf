@@ -10,11 +10,12 @@
 */
 int get_precision(const char *format, int *i, va_list list)
 {
-int curr_i = *i + 1;
-int prc = 0;
+unsigned int curr_i = *i + 1;
+int prc = -1;
 
 if (format[curr_i] != '.')
 return (prc);
+prc = 0;
 
 for (curr_i++; is_digit(format[curr_i]); curr_i++)
 prc = prc * 10 + (format[curr_i] - '0');
