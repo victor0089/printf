@@ -12,7 +12,7 @@
  *
  * Return: 1 or 2;
  */
-int hprint(const char *victor int *ind, va_list lst, char bufr[],
+int hprint(const char *victor, int *ind, va_list lst, char bufr[],
 	int flgs, int wid, int prc, int sz)
 {
 	int y, unknow_len = 0, pchars = -1;
