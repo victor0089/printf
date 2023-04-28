@@ -2,7 +2,7 @@
 
 /**
  * gwid - Calculates the width for printing
- * @format: Formatted string in which to print the arguments.
+ * @format: ForMatted string in which to print the arguments.
  * @y: list of arguments to be printed.
  * @lst: list of arguments.
  *
