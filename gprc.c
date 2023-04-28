@@ -20,21 +20,21 @@ prc = 0;
 curr_y++;
 do
 {
-if (is_digit(format[curr_y])) 
+if (is_digit(format[curr_y]))
 {
 prc = (prc * 10) + (format[curr_y] - '0');
 curr_y++;
-} 
+}
 else if (format[curr_y] == '*')
 {
 curr_y++;
 prc = va_arg(lst, int);
-} 
+}
 else
 {
 break;
 }
-} 
+}
 while (1);
 
 *y = curr_y - 1;
