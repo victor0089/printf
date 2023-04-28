@@ -1,24 +1,5 @@
 #include "main.h"
 
-/**************** PRINT CHAR **************/
-
-/**
- * pchar - Prints a char
- * @typs: list a of arguments
- * @bufr: Buffer array is to handle print
- * @flgs:  calculates active flags
- * @wid: Width
- * @prc: Precision specifications
- * @sz: Size specifier
- * Return: Number of chars printed
- */
-int pchar(va_list typs, char bufr[],
-	int flgs, int wid, int prc, int sz)
-{
-	char c = va_arg(typs, int);
-
-	return (handle_write_char(c, bufr, flgs, wid, prc, sz));
-}
 /************** PRINT A STRING *******************/
 /**
  * pstring - Prints a string
@@ -85,17 +66,6 @@ int pstring(va_list typs, char bufr[],
  * @sz: Size specifier
  * Return: Number of chars printed
  */
-int ppercent(va_list typs, char bufr[],
-	int flgs, int wid, int prc, int sz)
-{
-	UNUSED(typs);
-	UNUSED(bufr);
-	UNUSED(flgs);
-	UNUSED(wid);
-	UNUSED(prc);
-	UNUSED(sz);
-	return (write(1, "%%", 1));
-}
 
 /*********************** PRNT INT *********************/
 /**
@@ -140,7 +110,25 @@ int pint(va_list typs, char bufr[],
 
 	return (write_number(is_negative, y, bufr, flgs, wid, prc, sz));
 }
+/**************** PRINT CHAR **************/
 
+/**
+ * pchar - Prints a char
+ * @typs: list a of arguments
+ * @bufr: Buffer array is to handle print
+ * @flgs:  calculates active flags
+ * @wid: Width
+ * @prc: Precision specifications
+ * @sz: Size specifier
+ * Return: Number of chars printed
+ */
+int pchar(va_list typs, char bufr[],
+	int flgs, int wid, int prc, int sz)
+{
+	char c = va_arg(typs, int);
+
+	return (handle_write_char(c, bufr, flgs, wid, prc, sz));
+}
 /******************** PrNT BInARY **********************/
 /**
  * pbinary - Prints an unsigned number
@@ -152,6 +140,17 @@ int pint(va_list typs, char bufr[],
  * @sz: Size specifier
  * Return: Numbers of char printed.
  */
+int ppercent(va_list typs, char bufr[],
+	int flgs, int wid, int prc, int sz)
+{
+	UNUSED(typs);
+	UNUSED(bufr);
+	UNUSED(flgs);
+	UNUSED(wid);
+	UNUSED(prc);
+	UNUSED(sz);
+	return (write(1, "%%", 1));
+}
 int pbinary(va_list typs, char bufr[],
 	int flgs, int wid, int prc, int sz)
 {
