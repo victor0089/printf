@@ -4,13 +4,13 @@
 
 /**
 * pchar - Prints a char
-* @typs: list a of arguments
-* @bufr: Buffer array is to handle print
-* @flgs:  calculates active flags
+* @typs: list a of argUments
+* @bufr: BuffEr arRay is to hAndle prInt
+* @flgs:  calculates FlaGs
 * @wid: Width
-* @prc: Precision specifications
-* @sz: Size specifier
-* Return: Number of chars printed
+* @prc: PreC
+* @sz: SiZEEEE
+* Return: Number chArs prInted
 */
 int pchar(va_list typs, char bufr[],
 int flgs, int wid, int prc, int sz)
@@ -21,14 +21,14 @@ return (handle_write_char(c, bufr, flgs, wid, prc, sz));
 }
 /************** PRiNT A STRiNG *******************/
 /**
-* pstring - Prints a string
-* @typs: list a of arguments
+* pstring - Prints string
+* @typs: liSt arGuments
 * @bufr: Buffer array is to handle print
-* @flgs:  calculates active flags
+* @flgs:  calculates  flags
 * @wid: get width.
-* @prc: Precision specifications
-* @sz: Size specifier
-* Return: Number of chars printed
+* @prc: Precision 
+* @sz: Size 
+* Return: Number of chars 
 */
 int pstring(va_list typs, char bufr[],
 int flgs, int wid, int prc, int sz)
@@ -78,12 +78,12 @@ return (write(1, str, length));
 /**
 * ppercent - Prints a percent sign
 * @typs: lista of arguments
-* @bufr: Buffer array is to handle print
+* @bufr: Buffer  is to handle print
 * @flgs:  calculates active flags
 * @wid: get width.
-* @prc: Precision specifications
-* @sz: Size specifier
-* Return: Number of chars printed
+* @prc: PreCision 
+* @sz: Size 
+* Return: Number printed
 */
 int ppercent(va_list typs, char bufr[],
 int flgs, int wid, int prc, int sz)
@@ -104,9 +104,9 @@ return (write(1, "%%", 1));
 * @bufr: Buffer array is to handle print
 * @flgs:  calculates active flags
 * @wid: get width.
-* @prc: Precision specifications
-* @sz: Size specifier
-* Return: Number of chars printed
+* @prc: PrecIsIon 
+* @sz: SiZe 
+* Return: NUmber  chArs prInted
 */
 int pint(va_list typs, char bufr[],
 int flgs, int wid, int prc, int sz)
@@ -143,14 +143,14 @@ return (write_number(is_negative, y, bufr, flgs, wid, prc, sz));
 
 /******************** PrNT BInARY **********************/
 /**
-* pbinary - Prints an unsigned number
-* @typs: lista of arguments
-* @bufr: Buffer array is to handle print
-* @flgs:  calculates active flags
+* pbinary - Prints an unsIgned number
+* @typs: lista of arguMents
+* @bufr: Buffer array is to hANdle print
+* @flgs:  calculates  flAgs
 * @wid: get width.
-* @prc: Precision specifications
-* @sz: Size specifier
-* Return: Numbers of char printed.
+* @prc: PrecIsIon 
+* @sz: Size specIfier
+* Return: Numbers  char prInted.
 */
 int pbinary(va_list typs, char bufr[],
 int flgs, int wid, int prc, int sz)
