@@ -1,14 +1,14 @@
-#include "vnprint.h"
+#include "main.h"
 /**
- * handle_print - Prints an argument based on its type
- * @fmt: Formatted string in which to print the arguments.
- * @list: List of arguments to be printed.
+ * hprint - Prints an argument based on its type
+ * @victor: Formatted string in which to print the arguments.
+ * @lst: List of arguments to be printed.
  * @ind: ind.
- * @buffer: Buffer array to handle print.
- * @flags: Calculates active flags
- * @width: get width.
+ * @bufr: Buffer array to handle print.
+ * @flgs: Calculates active flags
+ * @wid: get width.
  * @prc: Precision specification
- * @size: Size specifier
+ * @sz: Size specifier
  *
  * Return: 1 or 2;
  */
