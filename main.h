@@ -19,24 +19,24 @@
 #define S_SHORT 1
 
 /**
- * struct victor - Struct nada
- *
- * @victor: The format.
- * @nad: The function associated.
- */
+* struct victor - Struct nada
+*
+* @victor: The format.
+* @nad: The function associated.
+*/
 struct victor
 {
-	char victor;
-	int (*nad)(va_list, char[], int, int, int, int);
+char victor;
+int (*nad)(va_list, char[], int, int, int, int);
 };
 
 
 /**
- * typedef struct victor victor_t - Struct nada
- *
- * @victor: The format.
- * @victor_t: The function associated.
- */
+* typedef struct victor victor_t - Struct nada
+*
+* @victor: The format.
+* @victor_t: The function associated.
+*/
 typedef struct victor victor_t;
 
 int _printf(const char *format, ...);
@@ -45,38 +45,21 @@ va_list lst, char bufr[], int flgs, int wid, int prc, int sz);
 
 /****************** FUNCTIONS ******************/
 
-/* Funtions to print chars and strings */
-int pchar(va_list typs, char bufr[],
-	int flgs, int wid, int prc, int sz);
-int pstring(va_list typs, char bufr[],
-	int flgs, int wid, int prc, int sz);
-int ppercent(va_list typs, char bufr[],
-	int flgs, int wid, int prc, int sz);
+int write_unsgnd(int is_negative, int ind,
+char bufr[],
+int flgs, int wid, int prc, int sz);
 
-/* Functions to print numbers */
-int pint(va_list typs, char bufr[],
-	int flgs, int wid, int prc, int sz);
-int pbinary(va_list typs, char bufr[],
-	int flgs, int wid, int prc, int sz);
-int punsigned(va_list typs, char bufr[],
-	int flgs, int wid, int prc, int sze);
-int poctal(va_list typs, char bufr[],
-	int flgs, int wid, int prc, int sz);
-int phexadecimal(va_list typs, char bufr[],
-	int flgs, int wid, int prc, int sz);
-int phexa_upper(va_list typs, char bufr[],
-	int flgs, int wid, int prc, int sz);
 
 int phexa(va_list typs, char map_to[],
 char bufr[], int flgs, char flg_ch, int wid, int prc, int sz);
 
 /* Function to print non printable characters */
 int pnon_printable(va_list typs, char bufr[],
-	int flgs, int wid, int prc, int sz);
+int flgs, int wid, int prc, int sz);
 
 /* Funcion to print memory address */
 int ppointer(va_list typs, char bufr[],
-	int flgs, int wid, int prc, int sz);
+int flgs, int wid, int prc, int sz);
 
 /* Funciotns to handle other specifiers */
 int gflgs(const char *format, int *y);
@@ -86,25 +69,43 @@ int gsz(const char *format, int *y);
 
 /*Function to print string in reverse*/
 int preverse(va_list typs, char bufr[],
-	int flgs, int wid, int prc, int sz);
-
+int flgs, int wid, int prc, int sz);
+/* Functions to print numbers */
+int pint(va_list typs, char bufr[],
+int flgs, int wid, int prc, int sz);
+int pbinary(va_list typs, char bufr[],
+int flgs, int wid, int prc, int sz);
+int punsigned(va_list typs, char bufr[],
+int flgs, int wid, int prc, int sze);
+int poctal(va_list typs, char bufr[],
+int flgs, int wid, int prc, int sz);
+int phexadecimal(va_list typs, char bufr[],
+int flgs, int wid, int prc, int sz);
+int phexa_upper(va_list typs, char bufr[],
+int flgs, int wid, int prc, int sz);
 /*Function to print a sTring in Rot 13*/
 int prot13string(va_list typs, char bufr[],
-	int flgs, int wid, int prc, int sz);
-
+int flgs, int wid, int prc, int sz);
+/* Funtions to print chars and strings */
+int pchar(va_list typs, char bufr[],
+int flgs, int wid, int prc, int sz);
+int pstring(va_list typs, char bufr[],
+int flgs, int wid, int prc, int sz);
+int ppercent(va_list typs, char bufr[],
+int flgs, int wid, int prc, int sz);
 /* width haNdler */
 int handle_write_char(char c, char bufr[],
-	int flgs, int wid, int prc, int sz);
+int flgs, int wid, int prc, int sz);
 int write_number(int is_positive, int ind, char bufr[],
-	int flgs, int wid, int prc, int sz);
+int flgs, int wid, int prc, int sz);
 int write_num(int ind, char bff[], int flgs, int wid, int prc,
-	int length, char padd, char extra_c);
+int length, char padd, char extra_c);
 int write_pointer(char bufr[], int ind, int length,
-	int wid, int flgs, char padd, char extra_c, int padd_start);
+int wid, int flgs, char padd, char extra_c, int padd_start);
 
 int write_unsgnd(int is_negative, int ind,
 char bufr[],
-	int flgs, int wid, int prc, int sz);
+int flgs, int wid, int prc, int sz);
 
 /**** UiIls ****/
 int is_printable(char);
