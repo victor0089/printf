@@ -1,13 +1,13 @@
 #include "main.h"
 /**
  * hprint - Prints an argument based on its type
- * @victor: Formatted string in which to print the arguments.
- * @lst: List of arguments to be printed.
+ * @victor: formatted string in which to print the arguments.
+ * @lst: list of arguments to be printed.
  * @ind: ind.
- * @bufr: Buffer array to handle print.
- * @flgs: Calculates active flags
+ * @bufr: Buffer array is to handle print.
+ * @flgs: calculates active flags
  * @wid: get width.
- * @prc: Precision specification
+ * @prc: Precision specifications
  * @sz: Size specifier
  *
  * Return: 1 or 2;
