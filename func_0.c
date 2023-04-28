@@ -87,7 +87,7 @@ return (write(1, str, length));
 
 /*********************** PRNT INT *********************/
 /**
-* pint -pRint int
+* pint pRint int
 * @typs: lista of arguments
 * @bufr: Buffer array is to handle print
 * @flgs:  calculates active flags
