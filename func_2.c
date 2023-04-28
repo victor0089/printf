@@ -3,7 +3,7 @@
 /**************** prNT PoInTeR ****************/
 /**
  * ppointer - Prints the value of a pointer variable
- * @typs: list a of arguments
+ * @typs: list a of arGuments
  * @bufr: Buffer arRay is to handle print
  * @flgs:  Calculates aCtive flags
  * @wid: get width
