@@ -136,7 +136,7 @@ int phexa(va_list typs, char map_to[], char bufr[],
 
 	UNUSED(wid);
 
-	num = convert_size_unsgnd(num, size);
+	num = convert_size_unsgnd(num, sz);
 
 	if (num == 0)
 		bufr[y--] = '0';
@@ -145,7 +145,7 @@ int phexa(va_list typs, char map_to[], char bufr[],
 
 	while (num > 0)
 	{
-		buffer[y--] = map_to[num % 16];
+		bufr[y--] = map_to[num % 16];
 		num /= 16;
 	}
 
