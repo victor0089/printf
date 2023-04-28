@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * gsz -Calculates the Size to cast the argument
+ * gsz -Calculates the SIze to cast the argument
  * @format: ForMatted sTring in which to print the arguments
  * @y: list of arguments to be printed.
  *
