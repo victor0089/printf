@@ -48,7 +48,7 @@ va_list lst, char bufr[], int flgs, int wid, int prc, int sz);
 /* Funtions to print chars and strings */
 int pchar(va_list typs, char bufr[],
 	int flgs, int wid, int prc, int sz);
-int pstring(va_list typs, char buffer[],
+int pstring(va_list typs, char bufr[],
 	int flgs, int wid, int prc, int sz);
 int ppercent(va_list typs, char bufr[],
 	int flgs, int wid, int prc, int sz);
@@ -68,7 +68,7 @@ int phexa_upper(va_list typs, char bufr[],
 	int flgs, int wid, int prc, int sz);
 
 int phexa(va_list typs, char map_to[],
-char bufr[], int flgs, char flag_ch, int wid, int prc, int sz);
+char bufr[], int flgs, char flg_ch, int wid, int prc, int sz);
 
 /* Function to print non printable characters */
 int pnon_printable(va_list typs, char bufr[],
@@ -85,8 +85,8 @@ int gprc(const char *format, int *y, va_list lst);
 int gsz(const char *format, int *y);
 
 /*Function to print string in reverse*/
-int preverse(va_list types, char buffer[],
-	int flags, int width, int prc, int size);
+int preverse(va_list typs, char bufr[],
+	int flgs, int wid, int prc, int sz);
 
 /*Function to print a sTring in Rot 13*/
 int prot13string(va_list typs, char bufr[],
@@ -111,7 +111,7 @@ int is_printable(char);
 int append_hexa_code(char, char[], int);
 int is_digit(char);
 
-long int convert_size_number(long int num, int size);
-long int convert_size_unsgnd(unsigned long int num, int size);
+long int convert_size_number(long int num, int sz);
+long int convert_size_unsgnd(unsigned long int num, int sz);
 
 #endif /* MAIN_H */
