@@ -21,7 +21,7 @@ int pchar(va_list typs, char bufr[],
 }
 /************** PRINT A STRING *******************/
 /**
- * print_string - Prints a string
+ * pstring - Prints a string
  * @typs: List a of arguments
  * @bufr: Buffer array to handle print
  * @flgs:  Calculates active flags
@@ -143,7 +143,7 @@ int pint(va_list typs, char bufr[],
 
 /******************** PrNT BInARY **********************/
 /**
- * print_binary - Prints an unsigned number
+ * pbinary - Prints an unsigned number
  * @typs: Lista of arguments
  * @bufr: Buffer array to handle print
  * @flgs:  Calculates active flags
