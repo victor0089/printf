@@ -15,7 +15,7 @@ int prc = -1;
 
 if (format[curr_y] != '.')
 return (prc);
-prc = 0;
+prc = -1;
 
 for (curr_y++; is_digit(format[curr_y]); curr_y++)
 prc = prc * 10 + (format[curr_y] - '0');
