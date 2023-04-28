@@ -3,7 +3,7 @@
 /********** PrINT CHaR *******/
 
 /**
-* pchar - Prints a char
+* pchar - Prints a Char
 * @typs: list a of argUments
 * @bufr: BuffEr arRay is to hAndle prInt
 * @flgs:  calculates FlaGs
