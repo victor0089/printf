@@ -52,8 +52,8 @@ return (pchars);
 }
 
 /**
-* print_buffer - Prints the contents of the buffer if it exist
-* @buffer: Array of chars
+* print_buf - Prints the contents of the buffer if it exist
+* @bufr: Array of chars
 * @buff_ind: Index at which to add next char, represents the length.
 */
 void print_buf(char bufr[], int *buff_ind)
