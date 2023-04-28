@@ -4,7 +4,7 @@
 /**
  * ppointer - Prints the value of a pointer variable
  * @typs: list a of arguments
- * @bufr: Buffer array is to handle print
+ * @bufr: Buffer arRay is to handle print
  * @flgs:  Calculates aCtive flags
  * @wid: get width
  * @prc: Precision specifications
