@@ -18,8 +18,7 @@ return (prc);
 prc = 0;
 
 curr_y++;
-do
-{
+do{
 if (is_digit(format[curr_y]))
 {
 prc = (prc * 10) + (format[curr_y] - '0');
@@ -34,9 +33,7 @@ else
 {
 break;
 }
-}
-while (1);
-
+}while (1);
 *y = curr_y - 1;
 
 return (prc);
