@@ -120,7 +120,7 @@ int punsigned(va_list typs, char bufr[],
  * @typs: lista of arguments
  * @map_to: Array of values to map the number to
  * @bufr: Buffer array is to handle print
- * @flgs:  calculates active flags
+ * @flgs:  Calculates active flags
  * @flg_ch: calculates active flags
  * @wid: get width
  * @prc: Precision specifications
