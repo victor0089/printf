@@ -8,25 +8,25 @@
 *
 * Return: Precision
 */
-int get_precision(const char *format, int *i, va_list list)
+int gprc(const char *format, int *y, va_list lst)
 {
-unsigned int curr_i = *i + 1;
+unsigned int curr_y = *y + 1;
 int prc = -1;
 
-if (format[curr_i] != '.')
+if (format[curr_y] != '.')
 return (prc);
 prc = 0;
 
-for (curr_i++; is_digit(format[curr_i]); curr_i++)
-prc = prc * 10 + (format[curr_i] - '0');
+for (curr_y++; is_digit(format[curr_y]); curr_y++)
+prc = prc * 10 + (format[curr_y] - '0');
 
-if (format[curr_i] == '*')
+if (format[curr_y] == '*')
 {
-curr_i++;
-prc = va_arg(list, int);
+curr_y++;
+prc = va_arg(lst, int);
 }
 
-*i = curr_i - 1;
+*y = curr_y - 1;
 
 return (prc);
 }
