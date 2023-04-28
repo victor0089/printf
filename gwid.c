@@ -2,9 +2,9 @@
 
 /**
  * gwid - Calculates the width for printing
- * @format: Formatted string in which to print the arguments.
- * @y: List of arguments to be printed.
- * @lst: list of arguments.
+ * @format: formatted string in which to print the arguments.
+ * @y: list of arguments to be printed.
+ * @lst: List of arguments.
  *
  * Return: width.
  */
