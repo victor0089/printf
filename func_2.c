@@ -3,11 +3,11 @@
 /**************** prNT PoInTeR ****************/
 /**
  * ppointer - Prints the value of a pointer variable
- * @typs: List a of arguments
- * @bufr: Buffer array to handle print
- * @flgs:  Calculates active flags
+ * @typs: list a of arguments
+ * @bufr: Buffer array is to handle print
+ * @flgs:  calculates active flags
  * @wid: get width
- * @prc: Precision specification
+ * @prc: Precision specifications
  * @sz: Size specifier
  * Return: Number of chars printed.
  */
@@ -55,11 +55,11 @@ int ppointer(va_list typs, char bufr[],
 /************ PRiNt NoN PrInTaBlE **********/
 /**
  * pnon_printable - Prints ascii codes in hexa of non printable chars
- * @typs: Lista of arguments
- * @bufr: Buffer array to handle print
- * @flgs:  Calculates active flags
+ * @typs: lista of arguments
+ * @bufr: Buffer array is to handle print
+ * @flgs:  calculates active flags
  * @wid: get width
- * @prc: Precision specification
+ * @prc: Precision specifications
  * @sz: Size specifier
  * Return: Number of chars printed
  */
@@ -95,11 +95,11 @@ int pnon_printable(va_list typs, char bufr[],
 /**************** PrInT ReVeRsE *****************/
 /**
  * preverse - Prints reverse string.
- * @typs: Lista of arguments
- * @bufr: Buffer array to handle print
+ * @typs: lista of arguments
+ * @bufr: Buffer array is to handle print
  * @flgs:  Calculates active flags
  * @wid: get width
- * @prc: Precision specification
+ * @prc: Precision specifications
  * @sz: Size specifier
  * Return: Numbers of chars printed
  */
@@ -138,11 +138,11 @@ int preverse(va_list typs, char bufr[],
 /******************* PriNT A STriNG IN Rot13 **********************/
 /**
  * prot13string - Print a string in rot13.
- * @typs: Lista of arguments
- * @bufr: Buffer array to handle print
- * @flgs:  Calculates active flags
+ * @typs: lista of arguments
+ * @bufr: Buffer array is to handle print
+ * @flgs:  calculates active flags
  * @wid: get width
- * @prc: Precision specification
+ * @prc: Precision specifications
  * @sz: Size specifier
  * Return: Numbers of chars printed
  */
