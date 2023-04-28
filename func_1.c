@@ -4,7 +4,7 @@
 /*********** PrInT UNSiGNeD NUMBER IN OCTL  **************/
 /**
  * poctal - Prints an unsigned number in octal notation
- * @typs: lista of arguments
+ * @typs: lista of arGuments
  * @bufr: Buffer array is to handle print
  * @flgs:  calculates acTive flags
  * @wid: get width
