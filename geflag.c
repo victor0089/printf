@@ -3,7 +3,7 @@
 /**
  * gflgs - Calculates active flags
  * @format: formatted string in which to print the arguments
- * @y: Take a parameter.
+ * @y: take a parameter.
  *
  * Return: Flags:
  */
