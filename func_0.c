@@ -1,6 +1,6 @@
 #include "main.h"
 
-/**************** PrINT CHaR **************/
+/********** PrINT CHaR *******/
 
 /**
 * pchar - Prints a char
@@ -26,9 +26,9 @@ return (handle_write_char(c, bufr, flgs, wid, prc, sz));
 * @bufr: Buffer array is to handle print
 * @flgs:  calculates  flags
 * @wid: get width.
-* @prc: Precision 
-* @sz: Size 
-* Return: Number of chars 
+* @prc: Precision
+* @sz: Size
+* Return: Number of chars
 */
 int pstring(va_list typs, char bufr[],
 int flgs, int wid, int prc, int sz)
@@ -81,8 +81,8 @@ return (write(1, str, length));
 * @bufr: Buffer  is to handle print
 * @flgs:  calculates active flags
 * @wid: get width.
-* @prc: PreCision 
-* @sz: Size 
+* @prc: PreCision
+* @sz: Size
 * Return: Number printed
 */
 int ppercent(va_list typs, char bufr[],
@@ -104,8 +104,8 @@ return (write(1, "%%", 1));
 * @bufr: Buffer array is to handle print
 * @flgs:  calculates active flags
 * @wid: get width.
-* @prc: PrecIsIon 
-* @sz: SiZe 
+* @prc: PrecIsIon
+* @sz: SiZe
 * Return: NUmber  chArs prInted
 */
 int pint(va_list typs, char bufr[],
@@ -148,7 +148,7 @@ return (write_number(is_negative, y, bufr, flgs, wid, prc, sz));
 * @bufr: Buffer array is to hANdle print
 * @flgs:  calculates  flAgs
 * @wid: get width.
-* @prc: PrecIsIon 
+* @prc: PrecIsIon
 * @sz: Size specIfier
 * Return: Numbers  char prInted.
 */
