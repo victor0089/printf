@@ -1,6 +1,6 @@
 #include "main.h"
 
-void print_buffer(char buffer[], int *buff_ind);
+void print_buf(char bufr[], int *buff_ind);
 
 /**
 * _printf - Printf function
@@ -9,44 +9,44 @@ void print_buffer(char buffer[], int *buff_ind);
 */
 int _printf(const char *format, ...)
 {
-int i, printed = 0, printed_chars = 0;
-int flags, width, precision, size, buff_ind = 0;
+int y, printed = 0, printed_chars = 0;
+int flgs, wid, prc, sz, buff_ind = 0;
 va_list list;
-char buffer[BUFF_SIZE];
+char bufr[BUFF_SIZE];
 
 if (format == NULL)
 return (-1);
 
-va_start(list, format);
+va_start(lst, format);
 
-for (i = 0; format && format[i] != '\0'; i++)
+for (y = 0; format && format[y] != '\0'; y++)
 {
-if (format[i] != '%')
+if (format[y] != '%')
 {
-buffer[buff_ind++] = format[i];
+buffer[buff_ind++] = format[y];
 if (buff_ind == BUFF_SIZE)
-print_buffer(buffer, &buff_ind);
+print_buf(bufr, &buff_ind);
 printed_chars++;
 }
 else
 {
-print_buffer(buffer, &buff_ind);
-flags = get_flags(format, &i);
-width = get_width(format, &i, list);
-precision = get_precision(format, &i, list);
-size = get_size(format, &i);
-++i;
-printed = handle_print(format, &i, list, buffer,
-flags, width, precision, size);
+print_buf(bufr, &buff_ind);
+flgs = get_flags(format, &y);
+wid = get_width(format, &y, lst);
+prc = get_precision(format, &y, lst);
+sze = get_size(format, &y;
+++y;
+printed = handle_print(format, &y, lst, bufr,
+flgs, wid, prc ,sz);
 if (printed == -1)
 return (-1);
 printed_chars += printed;
 }
 }
 
-print_buffer(buffer, &buff_ind);
+print_buf(bufr, &buff_ind);
 
-va_end(list);
+va_end(lst);
 
 return (printed_chars);
 }
@@ -56,10 +56,10 @@ return (printed_chars);
 * @buffer: Array of chars
 * @buff_ind: Index at which to add next char, represents the length.
 */
-void print_buffer(char buffer[], int *buff_ind)
+void print_buf(char bufr[], int *buff_ind)
 {
 if (*buff_ind > 0)
-write(1, &buffer[0], *buff_ind);
+write(1, &bufr[0], *buff_ind);
 
 *buff_ind = 0;
 }
