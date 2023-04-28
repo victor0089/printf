@@ -1,4 +1,4 @@
-#include "main.h"
+#include "vnprint.h"
 
 void print_buf(char bufr[], int *buff_ind);
 
