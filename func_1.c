@@ -151,8 +151,8 @@ int phexa(va_list typs, char map_to[], char bufr[],
 
 	if (flgs & F_HASH && init_num != 0)
 	{
-		buffer[y--] = flg_ch;
-		buffer[y--] = '0';
+		bufr[y--] = flg_ch;
+		bufr[y--] = '0';
 	}
 
 	y++;
