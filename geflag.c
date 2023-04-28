@@ -2,8 +2,8 @@
 
 /**
  * gflgs - Calculates active flags
- * @format: Formatted string in which to print the arguments
- * @y: take a parameter.
+ * @format: formatted string in which to print the arguments
+ * @y: Take a parameter.
  *
  * Return: Flags:
  */
