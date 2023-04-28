@@ -60,7 +60,7 @@ int pbinary(va_list typs, char bufr[],
 	int flgs, int wid, int prc, int sz);
 int punsigned(va_list typs, char bufr[],
 	int flgs, int wid, int prc, int sze);
-int proctal(va_list typs, char bufr[],
+int poctal(va_list typs, char bufr[],
 	int flgs, int wid, int prc, int sz);
 int phexadecimal(va_list typs, char bufr[],
 	int flgs, int wid, int prc, int sz);
@@ -80,12 +80,12 @@ int ppointer(va_list typs, char bufr[],
 
 /* Funciotns to handle other specifiers */
 int gflgs(const char *format, int *y);
-int gwidth(const char *format, int *y, va_list lst);
+int gwid(const char *format, int *y, va_list lst);
 int gprc(const char *format, int *y, va_list lst);
 int gsz(const char *format, int *y);
 
 /*Function to print string in reverse*/
-int print_reverse(va_list types, char buffer[],
+int preverse(va_list types, char buffer[],
 	int flags, int width, int prc, int size);
 
 /*Function to print a sTring in Rot 13*/
