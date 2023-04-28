@@ -24,7 +24,7 @@ return (handle_write_char(c, bufr, flgs, wid, prc, sz));
 * pstring - Prints string
 * @typs: liSt arGuments
 * @bufr: Buffer array is to handle print
-* @flgs:  calculates  flags
+* @flgs:  Calculates  fLags
 * @wid: get width.
 * @prc: Precision
 * @sz: Size
