@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * gflgs - Calculates active flags
+ * gflgs - CalCulates active flags
  * @format: ForMatted string in which to print the arguments
  * @y: Take a PaRameter.
  *
