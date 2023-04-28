@@ -2,8 +2,8 @@
 
 /**
  * gsz -Calculates the size to cast the argument
- * @format: Formatted string in which to print the arguments
- * @y: List of arguments to be printed.
+ * @format: formatted string in which to print the arguments
+ * @y: list of arguments to be printed.
  *
  * Return: Precision.
  */
