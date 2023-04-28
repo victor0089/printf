@@ -9,9 +9,9 @@ void print_buf(char bufr[], int *buff_ind);
 */
 int _printf(const char *format, ...)
 {
-int y, printed = 0, printed_chars = 0;
+int y, printed = 0, pchars = 0;
 int flgs, wid, prc, sz, buff_ind = 0;
-va_list list;
+va_list lst;
 char bufr[BUFF_SIZE];
 
 if (format == NULL)
@@ -26,7 +26,7 @@ if (format[y] != '%')
 buffer[buff_ind++] = format[y];
 if (buff_ind == BUFF_SIZE)
 print_buf(bufr, &buff_ind);
-printed_chars++;
+pchars++;
 }
 else
 {
@@ -48,7 +48,7 @@ print_buf(bufr, &buff_ind);
 
 va_end(lst);
 
-return (printed_chars);
+return (pchars);
 }
 
 /**
