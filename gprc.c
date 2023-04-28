@@ -2,9 +2,9 @@
 
 /**
 * gprc - Calculates the precision for printing
-* @format: Formatted string in which to print the arguments
-* @y: Pointer to the position of '.' character in format string
-* @lst: List of arguments to be printed
+* @format: formatted string in which to print the arguments
+* @y: pointer to the position of '.' character in format string
+* @lst: list of arguments to be printed
 *
 * Return: Precision
 */
