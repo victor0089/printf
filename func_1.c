@@ -4,11 +4,11 @@
 
 /**
  * punsigned - Prints an unsigned number
- * @typs: List a of arguments
- * @bufr: Buffer array to handle print
- * @flgs:  Calculates active flags
+ * @typs: list a of arguments
+ * @bufr: Buffer array is to handle print
+ * @flgs:  calculates active flags
  * @wid: get width
- * @prc: Precision specification
+ * @prc: Precision specifications
  * @sz: Size specifier
  * Return: Number of chars printed.
  */
@@ -39,11 +39,11 @@ int punsigned(va_list typs, char bufr[],
 /*********** PrInT UNSiGNeD NUMBER IN OCTL  **************/
 /**
  * poctal - Prints an unsigned number in octal notation
- * @typs: Lista of arguments
- * @bufr: Buffer array to handle print
- * @flgs:  Calculates active flags
+ * @typs: lista of arguments
+ * @bufr: Buffer array is to handle print
+ * @flgs:  calculates active flags
  * @wid: get width
- * @prc: Precision specification
+ * @prc: Precision specifications
  * @sz: Size specifier
  * Return: Number of chars printed
  */
@@ -81,11 +81,11 @@ int poctal(va_list typs, char bufr[],
 /********** PrInT UNsIgNeD nUmBeR IN HExADECiMAL **********/
 /**
  * phexadecimal - Prints an unsigned number in hexadecimal notation
- * @typs: Lista of arguments
- * @bufr: Buffer array to handle print
- * @flgs:  Calculates active flags
+ * @typs: lista of arguments
+ * @bufr: Buffer array is to handle print
+ * @flgs:  calculates active flags
  * @wid: get width
- * @prc: Precision specification
+ * @prc: Precision specifications
  * @sz: Size specifier
  * Return: Number of chars printed
  */
@@ -99,11 +99,11 @@ int phexadecimal(va_list typs, char bufr[],
 /*********** PRiNT UNSIGNED NUmBER IN UpPER HExADEcIMAL ************/
 /**
  * phexa_upper - Prints an unsigned number in upper hexadecimal notation
- * @typs: Lista of arguments
- * @bufr: Buffer array to handle print
- * @flgs:  Calculates active flags
+ * @typs: lista of arguments
+ * @bufr: Buffer array is to handle print
+ * @flgs:  calculates active flags
  * @wid: get width
- * @prc: Precision specification
+ * @prc: Precision specifications
  * @sz: Size specifier
  * Return: Number of chars printed
  */
@@ -117,13 +117,13 @@ int phexa_upper(va_list typs, char bufr[],
 /*********** PRINT HExX NuM IN LoWeR OR UpPeR ***********/
 /**
  * phexa - Prints a hexadecimal number in lower or upper
- * @typs: Lista of arguments
+ * @typs: lista of arguments
  * @map_to: Array of values to map the number to
- * @bufr: Buffer array to handle print
- * @flgs:  Calculates active flags
- * @flg_ch: Calculates active flags
+ * @bufr: Buffer array is to handle print
+ * @flgs:  calculates active flags
+ * @flg_ch: calculates active flags
  * @wid: get width
- * @prc: Precision specification
+ * @prc: Precision specifications
  * @sz: Size specification
  * Return: Number of chars printed
  */
