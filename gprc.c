@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
-* get_precision - Calculates the precision for printing
+* gprc - Calculates the precision for printing
 * @format: Formatted string in which to print the arguments
-* @i: Pointer to the position of '.' character in format string
-* @list: List of arguments to be printed
+* @y: Pointer to the position of '.' character in format string
+* @lst: List of arguments to be printed
 *
 * Return: Precision
 */
