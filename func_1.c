@@ -1,40 +1,5 @@
 #include "main.h"
 
-/******* pRiNT UNSiGNED ********/
-
-/**
- * punsigned - Prints an unsigned number
- * @typs: list a of arguments
- * @bufr: Buffer array is to handle print
- * @flgs:  calculates active flags
- * @wid: get width
- * @prc: Precision specifications
- * @sz: Size specifier
- * Return: Number of chars printed.
- */
-int punsigned(va_list typs, char bufr[],
-	int flgs, int wid, int prc, int sz)
-{
-	int y = BUFF_SIZE - 2;
-	unsigned long int num = va_arg(typs, unsigned long int);
-
-	num = convert_size_unsgnd(num, sz);
-
-	if (num == 0)
-		bufr[y--] = '0';
-
-	bufr[BUFF_SIZE - 1] = '\0';
-
-	while (num > 0)
-	{
-		bufr[y--] = (num % 10) + '0';
-		num /= 10;
-	}
-
-	y++;
-
-	return (write_unsgnd(0, y, bufr, flgs, wid, prc, sz));
-}
 
 /*********** PrInT UNSiGNeD NUMBER IN OCTL  **************/
 /**
@@ -112,6 +77,41 @@ int phexa_upper(va_list typs, char bufr[],
 {
 	return (phexa(typs, "0123456789ABCDEF", bufr,
 		flgs, 'X', wid, prc, sz));
+}
+/******* pRiNT UNSiGNED ********/
+
+/**
+ * punsigned - Prints an unsigned number
+ * @typs: list a of arguments
+ * @bufr: Buffer array is to handle print
+ * @flgs:  calculates active flags
+ * @wid: get width
+ * @prc: Precision specifications
+ * @sz: Size specifier
+ * Return: Number of chars printed.
+ */
+int punsigned(va_list typs, char bufr[],
+	int flgs, int wid, int prc, int sz)
+{
+	int y = BUFF_SIZE - 2;
+	unsigned long int num = va_arg(typs, unsigned long int);
+
+	num = convert_size_unsgnd(num, sz);
+
+	if (num == 0)
+		bufr[y--] = '0';
+
+	bufr[BUFF_SIZE - 1] = '\0';
+
+	while (num > 0)
+	{
+		bufr[y--] = (num % 10) + '0';
+		num /= 10;
+	}
+
+	y++;
+
+	return (write_unsgnd(0, y, bufr, flgs, wid, prc, sz));
 }
 
 /*********** PRINT HExX NuM IN LoWeR OR UpPeR ***********/
