@@ -1,5 +1,23 @@
 #include "main.h"
+/**************** PriNt cHaR **************/
 
+/**
+ * pchar - Prints a chAr
+ * @typs: list a of arguments
+ * @bufr: Buffer array is to handle print
+ * @flgs:  calculates active flags
+ * @wid: Width
+ * @prc: Precision specifications
+ * @sz: Size specifier
+ * Return: Number of chars printed
+ */
+int pchar(va_list typs, char bufr[],
+	int flgs, int wid, int prc, int sz)
+{
+	char c = va_arg(typs, int);
+
+	return (handle_write_char(c, bufr, flgs, wid, prc, sz));
+}
 /************** PRINT A STRING *******************/
 /**
  * pstring - Prints a string
