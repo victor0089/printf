@@ -23,7 +23,7 @@ for (y = 0; format && format[y] != '\0'; y++)
 {
 if (format[y] != '%')
 {
-buffer[buff_ind++] = format[y];
+bufr[buff_ind++] = format[y];
 if (buff_ind == BUFF_SIZE)
 print_buf(bufr, &buff_ind);
 pchars++;
@@ -40,7 +40,7 @@ printed = hprint(format, &y, lst, bufr,
 flgs, wid, prc ,sz);
 if (printed == -1)
 return (-1);
-printed_chars += printed;
+pchars += printed;
 }
 }
 
