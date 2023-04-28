@@ -34,7 +34,7 @@ print_buf(bufr, &buff_ind);
 flgs = gflgs(format, &y);
 wid = gwid(format, &y, lst);
 prc = gprc(format, &y, lst);
-sz = gsz(format, &y;
+sz = gsz(format, &y);
 ++y;
 printed = hprint(format, &y, lst, bufr,
 flgs, wid, prc, sz);
