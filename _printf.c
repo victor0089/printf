@@ -31,12 +31,12 @@ printed_chars++;
 else
 {
 print_buf(bufr, &buff_ind);
-flgs = get_flags(format, &y);
-wid = get_width(format, &y, lst);
-prc = get_precision(format, &y, lst);
-sze = get_size(format, &y;
+flgs = gflgs(format, &y);
+wid = gwid(format, &y, lst);
+prc = gprc(format, &y, lst);
+sze = gsz(format, &y;
 ++y;
-printed = handle_print(format, &y, lst, bufr,
+printed = hprint(format, &y, lst, bufr,
 flgs, wid, prc ,sz);
 if (printed == -1)
 return (-1);
