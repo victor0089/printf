@@ -30,7 +30,7 @@ int pchar(va_list typs, char bufr[],
  * @sz: Size specifier
  * Return: Number of chars printed
  */
-int print_string(va_list typs, char bufr[],
+int pstring(va_list typs, char bufr[],
 	int flgs, int wid, int prc, int sz)
 {
 	int length = 0, y;
@@ -59,7 +59,7 @@ int print_string(va_list typs, char bufr[],
 		if (flgs & F_MINUS)
 		{
 			write(1, &str[0], length);
-			for (y = width - length; y > 0; y--)
+			for (y = wid - length; y > 0; y--)
 				write(1, " ", 1);
 			return (wid);
 		}
