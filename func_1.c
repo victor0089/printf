@@ -93,7 +93,7 @@ int phexadecimal(va_list typs, char bufr[],
 	int flgs, int wid, int prc, int sz)
 {
 	return (phexa(typs, "0123456789abcdef", bufr,
-		flgs, 'x', width, prc, sz));
+		flgs, 'x', wid, prc, sz));
 }
 
 /*********** PRiNT UNSIGNED NUmBER IN UpPER HExADEcIMAL ************/
@@ -128,7 +128,7 @@ int phexa_upper(va_list typs, char bufr[],
  * Return: Number of chars printed
  */
 int phexa(va_list typs, char map_to[], char bufr[],
-	int flgs, char flg_ch, int width, int prc, int sz)
+	int flgs, char flg_ch, int wid, int prc, int sz)
 {
 	int y = BUFF_SIZE - 2;
 	unsigned long int num = va_arg(typs, unsigned long int);
