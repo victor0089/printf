@@ -108,7 +108,7 @@ int ppercent(va_list typs, char bufr[],
  * @sz: Size specifier
  * Return: Number of chars printed
  */
-int print(va_list typs, char bufr[],
+int pint(va_list typs, char bufr[],
 	int flgs, int wid, int prc, int sz)
 {
 	int y = BUFF_SIZE - 2;
