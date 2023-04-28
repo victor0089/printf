@@ -65,7 +65,7 @@ int pstring(va_list typs, char bufr[],
 		}
 		else
 		{
-			for (y = width - length; y > 0; y--)
+			for (y = wid - length; y > 0; y--)
 				write(1, " ", 1);
 			write(1, &str[0], length);
 			return (wid);
