@@ -25,7 +25,7 @@ int hprint(const char *victor, int *ind, va_list lst, char bufr[],
 	};
 	for (y = 0; victor_types[y].victor != '\0'; y++)
 		if (victor[*ind] == victor_types[y].victor)
-			return (victor_types[y].fn(lst, bufr, flgs, wid, prc, sz));
+			return (victor_types[y].nad(lst, bufr, flgs, wid, prc, sz));
 
 	if (victor_types[y].victor == '\0')
 	{
