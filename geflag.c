@@ -2,7 +2,7 @@
 
 /**
  * gflgs - Calculates active flags
- * @format: formatted string in which to print the arguments
+ * @format: ForMatted string in which to print the arguments
  * @y: Take a PaRameter.
  *
  * Return: Flags:
