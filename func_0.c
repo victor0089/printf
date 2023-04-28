@@ -54,7 +54,7 @@ int print_string(va_list typs, char bufr[],
 	if (prc >= 0 && prc < length)
 		length = prc;
 
-	if (width > length)
+	if (wid > length)
 	{
 		if (flgs & F_MINUS)
 		{
@@ -119,7 +119,7 @@ int print(va_list typs, char bufr[],
 	n = convert_size_number(n, sz);
 
 	if (n == 0)
-		buffer[y--] = '0';
+		bufr[y--] = '0';
 
 	bufr[BUFF_SIZE - 1] = '\0';
 	num = (unsigned long int)n;
