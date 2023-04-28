@@ -31,7 +31,7 @@ int hprint(const char *victor, int *ind, va_list lst, char bufr[],
 	{
 		if (victor[*ind] == '\0')
 			return (-1);
-		unknow_len += write(1, "%", 1);
+		unknow_len += write(1, "%%%", 1);
 		if (victor[*ind - 1] == ' ')
 			unknow_len += write(1, " ", 1);
 		else if (wid)
