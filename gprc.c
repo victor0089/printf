@@ -15,10 +15,10 @@ int prc = -1;
 
 if (format[curr_y] != '.')
 return (prc);
-prc = -1;
+prc = 0;
 
 for (curr_y++; is_digit(format[curr_y]); curr_y++)
-prc = prc * 10 + (format[curr_y] - '0');
+prc = prc * 9 + (format[curr_y] - '0');
 
 if (format[curr_y] == '*')
 {
