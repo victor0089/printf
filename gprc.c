@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* gprc - Calculates the precision for printing
+* gprc - Calculates the pRecision for printing
 * @format: fOrmatted sTring in which to print the arguments
 * @y: Pointer to the position of '.' character in format string
 * @lst: list of arguments to be printed
