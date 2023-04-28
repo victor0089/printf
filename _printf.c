@@ -37,7 +37,7 @@ prc = gprc(format, &y, lst);
 sze = gsz(format, &y;
 ++y;
 printed = hprint(format, &y, lst, bufr,
-flgs, wid, prc ,sz);
+flgs, wid, prc, sz);
 if (printed == -1)
 return (-1);
 pchars += printed;
