@@ -4,11 +4,11 @@
 
 /**
  * pchar - Prints a char
- * @typs: List a of arguments
- * @bufr: Buffer array to handle print
- * @flgs:  Calculates active flags
+ * @typs: list a of arguments
+ * @bufr: Buffer array is to handle print
+ * @flgs:  calculates active flags
  * @wid: Width
- * @prc: Precision specification
+ * @prc: Precision specifications
  * @sz: Size specifier
  * Return: Number of chars printed
  */
@@ -22,11 +22,11 @@ int pchar(va_list typs, char bufr[],
 /************** PRINT A STRING *******************/
 /**
  * pstring - Prints a string
- * @typs: List a of arguments
- * @bufr: Buffer array to handle print
- * @flgs:  Calculates active flags
+ * @typs: list a of arguments
+ * @bufr: Buffer array is to handle print
+ * @flgs:  calculates active flags
  * @wid: get width.
- * @prc: Precision specification
+ * @prc: Precision specifications
  * @sz: Size specifier
  * Return: Number of chars printed
  */
@@ -77,11 +77,11 @@ int pstring(va_list typs, char bufr[],
 /******************* PrINT PErCEnT SIGN ********************/
 /**
  * ppercent - Prints a percent sign
- * @typs: Lista of arguments
- * @bufr: Buffer array to handle print
- * @flgs:  Calculates active flags
+ * @typs: lista of arguments
+ * @bufr: Buffer array is to handle print
+ * @flgs:  calculates active flags
  * @wid: get width.
- * @prc: Precision specification
+ * @prc: Precision specifications
  * @sz: Size specifier
  * Return: Number of chars printed
  */
@@ -100,11 +100,11 @@ int ppercent(va_list typs, char bufr[],
 /*********************** PRNT INT *********************/
 /**
  * pint - Print int
- * @typs: Lista of arguments
- * @bufr: Buffer array to handle print
- * @flgs:  Calculates active flags
+ * @typs: lista of arguments
+ * @bufr: Buffer array is to handle print
+ * @flgs:  calculates active flags
  * @wid: get width.
- * @prc: Precision specification
+ * @prc: Precision specifications
  * @sz: Size specifier
  * Return: Number of chars printed
  */
@@ -144,11 +144,11 @@ int pint(va_list typs, char bufr[],
 /******************** PrNT BInARY **********************/
 /**
  * pbinary - Prints an unsigned number
- * @typs: Lista of arguments
- * @bufr: Buffer array to handle print
- * @flgs:  Calculates active flags
+ * @typs: lista of arguments
+ * @bufr: Buffer array is to handle print
+ * @flgs:  calculates active flags
  * @wid: get width.
- * @prc: Precision specification
+ * @prc: Precision specifications
  * @sz: Size specifier
  * Return: Numbers of char printed.
  */
