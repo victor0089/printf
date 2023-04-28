@@ -12,7 +12,7 @@ int gsz(const char *format, int *y)
 	int curr_y = *y + 1;
 	int sz = 0;
 
-	if (format[curr_] == 'l')
+	if (format[curr_y] == 'l')
 		sz = S_LONG;
 	else if (format[curr_y] == 'h')
 		sz = S_SHORT;
