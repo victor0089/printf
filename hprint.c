@@ -20,21 +20,11 @@ int flgs, int wid, int prc, int sz)
 int y, unknown_len = 0, pchars = -1;
 
 victor_t victor_types[] = {
-{'c', pchar},
-{'s', pstring},
-{'%', ppercent},
-{'i', pint},
-{'d', pint},
-{'b', pbinary},
-{'u', punsigned},
-{'o', poctal},
-{'x', phexadecimal},
-{'X', phexa_upper},
-{'p', ppointer},
-{'S', pnon_printable},
-{'r', preverse},
-{'R', prot13string},
-{'\0', NULL}
+{'c', pchar}, {'s', pstring}, {'%', ppercent},
+{'i', pint}, {'d', pint}, {'b', pbinary},
+{'u', punsigned}, {'o', poctal}, {'x', phexadecimal},
+{'X', phexa_upper}, {'p', ppointer}, {'S', pnon_printable},
+{'r', preverse}, {'R', prot13string}, {'\0', NULL}
 };
 
 for (y = 0; victor_types[y].victor != '\0'; y++)
