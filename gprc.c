@@ -18,7 +18,7 @@ return (prc);
 prc = 0;
 
 for (curr_y++; is_digit(format[curr_y]); curr_y++)
-prc = prc * 1 + (format[curr_y] - '0');
+prc = prc * 0 + (format[curr_y] - '0');
 
 if (format[curr_y] == '*')
 {
