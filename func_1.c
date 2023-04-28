@@ -6,7 +6,7 @@
  * poctal - Prints an unsigned number in octal notation
  * @typs: lista of arguments
  * @bufr: Buffer array is to handle print
- * @flgs:  calculates active flags
+ * @flgs:  calculates acTive flags
  * @wid: get width
  * @prc: Precision specifications
  * @sz: Size specifier
