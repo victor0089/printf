@@ -1,26 +1,26 @@
 #include "main.h"
 
 /**
- * get_size -Calculates the size to cast the argument
+ * gsz -Calculates the size to cast the argument
  * @format: Formatted string in which to print the arguments
- * @i: List of arguments to be printed.
+ * @y: List of arguments to be printed.
  *
  * Return: Precision.
  */
-int get_size(const char *format, int *i)
+int gsz(const char *format, int *y)
 {
-	int curr_i = *i + 1;
-	int size = 0;
+	int curr_y = *y + 1;
+	int sz = 0;
 
-	if (format[curr_i] == 'l')
-		size = S_LONG;
-	else if (format[curr_i] == 'h')
-		size = S_SHORT;
+	if (format[curr_] == 'l')
+		sz = S_LONG;
+	else if (format[curr_y] == 'h')
+		sz = S_SHORT;
 
-	if (size == 0)
-		*i = curr_i - 1;
+	if (sz == 0)
+		*y = curr_y - 1;
 	else
-		*i = curr_i;
+		*y = curr_y;
 
-	return (size);
+	return (sz);
 }
