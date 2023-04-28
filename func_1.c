@@ -38,7 +38,7 @@ int punsigned(va_list typs, char bufr[],
 
 /*********** PrInT UNSiGNeD NUMBER IN OCTL  **************/
 /**
- * print_octal - Prints an unsigned number in octal notation
+ * poctal - Prints an unsigned number in octal notation
  * @typs: Lista of arguments
  * @bufr: Buffer array to handle print
  * @flgs:  Calculates active flags
