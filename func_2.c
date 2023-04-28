@@ -8,7 +8,7 @@
  * @flgs:  calculates active flags
  * @wid: get width
  * @prc: Precision specifications
- * @sz: Size specifier
+ * @sz: size specifier
  * Return: Number of chars printed.
  */
 int ppointer(va_list typs, char bufr[],
