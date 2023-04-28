@@ -1,8 +1,9 @@
 #include "main.h"
-/**************** PriNt cHaR **************/
+
+/**************** PrINT CHaR **************/
 
 /**
-* pchar - Prints a chAr
+* pchar - Prints a char
 * @typs: list a of arguments
 * @bufr: Buffer array is to handle print
 * @flgs:  calculates active flags
@@ -18,7 +19,7 @@ char c = va_arg(typs, int);
 
 return (handle_write_char(c, bufr, flgs, wid, prc, sz));
 }
-/************** PRINT A STRING *******************/
+/************** PRiNT A STRiNG *******************/
 /**
 * pstring - Prints a string
 * @typs: list a of arguments
@@ -84,10 +85,21 @@ return (write(1, str, length));
 * @sz: Size specifier
 * Return: Number of chars printed
 */
+int ppercent(va_list typs, char bufr[],
+int flgs, int wid, int prc, int sz)
+{
+UNUSED(typs);
+UNUSED(bufr);
+UNUSED(flgs);
+UNUSED(wid);
+UNUSED(prc);
+UNUSED(sz);
+return (write(1, "%%", 1));
+}
 
 /*********************** PRNT INT *********************/
 /**
-* pint  int
+* pint - Print int
 * @typs: lista of arguments
 * @bufr: Buffer array is to handle print
 * @flgs:  calculates active flags
@@ -128,6 +140,7 @@ y++;
 
 return (write_number(is_negative, y, bufr, flgs, wid, prc, sz));
 }
+
 /******************** PrNT BInARY **********************/
 /**
 * pbinary - Prints an unsigned number
@@ -139,17 +152,6 @@ return (write_number(is_negative, y, bufr, flgs, wid, prc, sz));
 * @sz: Size specifier
 * Return: Numbers of char printed.
 */
-int ppercent(va_list typs, char bufr[],
-int flgs, int wid, int prc, int sz)
-{
-UNUSED(typs);
-UNUSED(bufr);
-UNUSED(flgs);
-UNUSED(wid);
-UNUSED(prc);
-UNUSED(sz);
-return (write(1, "%%", 1));
-}
 int pbinary(va_list typs, char bufr[],
 int flgs, int wid, int prc, int sz)
 {
