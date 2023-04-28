@@ -12,39 +12,39 @@
  *
  * Return: 1 or 2;
  */
-int handle_print(const char *fmt, int *ind, va_list list, char buffer[],
-	int flags, int width, int prc, int size)
+int hprint(const char *victor int *ind, va_list lst, char bufr[],
+	int flgs, int wid, int prc, int sz)
 {
-	int i, unknow_len = 0, printed_chars = -1;
-	fmt_t fmt_types[] = {
-		{'c', print_char}, {'s', print_string}, {'%', print_percent},
-		{'i', print_int}, {'d', print_int}, {'b', print_binary},
-		{'u', print_unsigned}, {'o', print_octal}, {'x', print_hexadecimal},
-		{'X', print_hexa_upper}, {'p', print_pointer}, {'S', print_non_printable},
-		{'r', print_reverse}, {'R', print_rot13string}, {'\0', NULL}
+	int y, unknow_len = 0, pchars = -1;
+	victor_t victor_types[] = {
+		{'c', pchar}, {'s', pstring}, {'%', ppercent},
+		{'i', pint}, {'d', pint}, {'b', pbinary},
+		{'u', punsigned}, {'o', poctal}, {'x', phexadecimal},
+		{'X', phexa_upper}, {'p', ppointer}, {'S', pnon_printable},
+		{'r', preverse}, {'R', prot13string}, {'\0', NULL}
 	};
-	for (i = 0; fmt_types[i].fmt != '\0'; i++)
-		if (fmt[*ind] == fmt_types[i].fmt)
-			return (fmt_types[i].fn(list, buffer, flags, width, prc, size));
+	for (y = 0; victor_types[y].victor != '\0'; y++)
+		if (victor[*ind] == victor_types[y].victor)
+			return (victor_types[i].fn(lst, bufr, flgs, wid, prc, sz));
 
-	if (fmt_types[i].fmt == '\0')
+	if (victor_types[y].victor == '\0')
 	{
-		if (fmt[*ind] == '\0')
+		if (victor[*ind] == '\0')
 			return (-1);
 		unknow_len += write(1, "%%", 1);
-		if (fmt[*ind - 1] == ' ')
+		if (victor[*ind - 1] == ' ')
 			unknow_len += write(1, " ", 1);
-		else if (width)
+		else if (wid)
 		{
 			--(*ind);
-			while (fmt[*ind] != ' ' && fmt[*ind] != '%')
+			while (victor[*ind] != ' ' && victor[*ind] != '%')
 				--(*ind);
-			if (fmt[*ind] == ' ')
+			if (victor[*ind] == ' ')
 				--(*ind);
 			return (1);
 		}
-		unknow_len += write(1, &fmt[*ind], 1);
+		unknow_len += write(1, &victor[*ind], 1);
 		return (unknow_len);
 	}
-	return (printed_chars);
+	return (pchars);
 }
